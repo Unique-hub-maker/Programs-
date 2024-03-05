@@ -1,0 +1,51 @@
+/* Write a Program in C to product the matrices of order 2x2 */
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int i,j,a[2][2],b[2][2],m[2][2],sum=0,k;
+	printf("Enter the Elements in Matrix A:\n Here WE GO !!\n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("Enter the Element a%d%d:",i+1,j+1);
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("Enter the Elements in Matrix B:\n Here WE GO !!\n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("Enter the Element b%d%d:",i+1,j+1);
+			scanf("%d",&b[i][j]);
+		}
+	}
+	
+	// multiplication part 
+	 for(i=0;i<2;i++)
+	 {  
+	 	for(j=0;j<2;j++)
+	 	{   sum=0;
+	 		for(k=0;k<2;k++)
+	 		{
+	 			 sum=sum+a[i][k]*b[k][j];
+			 }
+			 m[i][j]=sum;
+			 
+		 }
+	 }
+	 
+	 // printing work 
+	 for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+		  printf("\t%d",m[i][j]);
+		 
+		}
+		printf("\n");
+	}
+	return 0;
+}
