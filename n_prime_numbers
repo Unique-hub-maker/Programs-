@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int n,x;
+	printf("Enter a number :\n");
+	scanf("%d",&n);
+	printf("The first %d prime numbers :\n",n);
+	int m=2;
+	for(int c=1;c<=n;m++)
+	{
+		for( x=2; x<m ;x++)
+		{
+			if(m%x==0)
+			break;
+		}
+		if(x==m)
+		{
+			printf("%d\t",m);
+			c++;
+		}
+		
+	
+		
+	}
+		return 0;
+}

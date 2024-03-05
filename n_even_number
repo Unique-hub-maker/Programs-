@@ -1,0 +1,39 @@
+/* WAP to calculate the sum of first 10 even numbers = 2,4,6,8,10,12,14,16,18,20.*/
+
+
+
+#include<stdio.h>
+ 
+int sum(int);
+int main()
+{
+ 
+	int n;
+	int m=0;
+    printf("HERE WE GO GUYS !! \n");
+    printf("Enter any number :");
+    scanf("%d",&n);
+	m=sum(n);
+	 printf("\nThe sum of first 10 even numbers is %d",m);
+	 return 0;
+	
+	
+}
+int sum(int n)
+{    int i,m=0,c=1;
+printf("The Even numbers are :\n"); 
+   for(i=1;c<=n;i++)
+   {
+   	if(i%2==0)
+   	{ 
+   	printf("%d\t",i);
+   	m=m+i;
+   	c=c+1;
+   	
+	   }
+   	
+   }
+	
+	return m;
+	
+}

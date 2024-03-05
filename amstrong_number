@@ -1,0 +1,24 @@
+#include<stdio.h> 
+#include<math.h>
+int main()
+{
+    int n,s=0,r,z;
+    printf("Enter any number\t");
+    scanf("%d",&n);
+    z=n;
+    do
+    {
+        r = n%10;
+        s = s+pow(r,3);
+        n = n/10;
+    }while (n!=0);
+    if (z==s)
+    {
+    printf("%d is armstrong \n",z);
+    }
+   else
+   {
+    printf("%d is not armstrong \n",z);
+   }
+    return 0;
+}
