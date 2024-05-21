@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+#include <iomanip>
+
+int main() {
+    double number = 3.14159265358979323846;
+    
+     cout << setw(50) <<"Default \t\t precision: " << number <<  endl;
+    
+     cout << "Set precision to 4: " <<  setprecision(4) << number <<  endl;
+    
+    cout << "Set precision to 10: " <<  setprecision(10) << number <<  endl;
+    
+    return 0;
+}
