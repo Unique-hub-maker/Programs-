@@ -32,6 +32,8 @@ int main{
     cin>>butwal::name>>butwal::ctzn;
      cout<<"Enter the details of the persom from ktm is "<<endl;
     cin>>ktm::name>>ktm::ctzn;
+    butwal::showdetails();
+    ktm:showdetails();
     return 0;
-    
+
 }
