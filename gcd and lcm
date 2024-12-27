@@ -15,6 +15,8 @@ int main()
 		denominator=num1;
 	}
 	rem=numerator % denominator;
+
+	
 	while(rem != 0)
 	{
 		 numerator=denominator;
